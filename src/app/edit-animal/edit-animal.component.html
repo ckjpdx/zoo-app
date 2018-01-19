@@ -2,12 +2,22 @@
 <div *ngIf="selectedAnimal">
   <h2>Edit Animal:</h2>
     <label>Name:</label>
-    <input [(ngModel)]="selectedAnimal.name" type="text" name="thing">
-    <!-- <label>Brand name</label>
+    <input [(ngModel)]="selectedAnimal.name" type="text">
+    <label>species:</label>
     <input [(ngModel)]="selectedAnimal.species" type="text">
-    <label>Price $</label>
+    <label>age:</label>
     <input [(ngModel)]="selectedAnimal.age" type="text">
-    <label>ABV %</label>
-    <input [(ngModel)]="selectedAnimal.location" type="text"> -->
+    <label>diet:</label>
+    <input [(ngModel)]="selectedAnimal.diet" type="text">
+    <label>location:</label>
+    <input [(ngModel)]="selectedAnimal.location" type="text">
+    <label>caretakers:</label>
+    <input [(ngModel)]="selectedAnimal.caretakers" type="text">
+    <label>sex:</label>
+    <input [(ngModel)]="selectedAnimal.sex" type="text">
+    <label>likes:</label>
+    <input [(ngModel)]="selectedAnimal.likes" type="text">
+    <label>dislikes:</label>
+    <input [(ngModel)]="selectedAnimal.dislikes" type="text">
     <button (click)="doneEditing()">Done</button>
 </div>

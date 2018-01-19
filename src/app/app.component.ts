@@ -18,10 +18,6 @@ export class AppComponent {
     this.selectedAnimal = clickedAnimal;
   }
 
-  done() {
-    this.selectAnimal = null;
-  }
-
   addAnimal(newAnimal: Animal){
     this.animalList.push(newAnimal);
   }
