@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Animal } from './../app.component';
+import { Animal } from './../model';
 
 @Component({
   selector: 'add-animal',
@@ -12,8 +12,8 @@ export class AddAnimalComponent implements OnInit {
 
   constructor() { }
 
-  addAnimal(name: string, species: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string){
-    console.log(name);
+  addAnimal(name, species, age, diet, location, caretakers, sex, likes, dislikes){
+    console.log(name, species, age);
     let newAnimal: Animal = new Animal(name, species, age, diet, location, caretakers, sex, likes, dislikes)
     console.log(newAnimal);
     this.animalEmitter.emit(newAnimal);

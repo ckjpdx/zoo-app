@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Animal } from './model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,23 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Zoo Animal Tracker';
   animalList: Animal[] = [
-  {
-    name: "Tinkerbell",
-    species: "Northwest Black Tailed Deer",
-    age: 8,
-    diet: "Herbivore",
-    location: "Northern Trail",
-    caretakers: 2,
-    sex: "Female",
-    likes: "Delicate roots and leaves",
-    dislikes: "Loud Noises",
-    }
+    new Animal(`Tinkerbell`, `Deer`, 5, `Greens`, `Woods`, 2, `male`, `Clouds`, `Gunshots`)
   ]
   addAnimal(newAnimal: Animal){
     this.animalList.push(newAnimal);
   }
-}
-export class Animal {
-  defaultProperty: string = 'This is an animal';
-  constructor(name: string, species: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string) { }
 }
