@@ -9,11 +9,14 @@ import { Animal } from './../model';
 export class ListAnimalComponent implements OnInit {
   @Input() animalList: Animal[];
   @Output() editEmitter = new EventEmitter();
+  filterProperty: string = `age`;
+
   constructor() { }
+
   editAnimal(animal){
     this.editEmitter.emit(animal);
   }
+
   ngOnInit() {
   }
-
 }

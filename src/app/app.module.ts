@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AddAnimalComponent } from './add-animal/add-animal.component';
 import { ListAnimalComponent } from './list-animal/list-animal.component';
 import { EditAnimalComponent } from './edit-animal/edit-animal.component';
+import { AnimalPipe } from './list-animal/animal.pipe';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { EditAnimalComponent } from './edit-animal/edit-animal.component';
     AppComponent,
     AddAnimalComponent,
     ListAnimalComponent,
-    EditAnimalComponent
+    EditAnimalComponent,
+    AnimalPipe
   ],
   imports: [
     BrowserModule,

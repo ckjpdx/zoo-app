@@ -8,12 +8,12 @@ import { Animal } from './../model';
 })
 export class EditAnimalComponent implements OnInit {
   @Input() selectedAnimal: Animal;
-  @Output() doneEditingSender = new EventEmitter();
+  @Output() doneEditingEmitter = new EventEmitter();
 
   constructor() { }
 
   doneEditing(){
-    this.doneEditingSender.emit();
+    this.doneEditingEmitter.emit();
   }
   ngOnInit() {
   }

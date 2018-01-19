@@ -4,6 +4,6 @@
 
 <list-animal [animalList]="animalList" (editEmitter)="editAnimal($event)"></list-animal>
 
-<edit-animal [selectedAnimal]="selectedAnimal" (doneEditingSender)="editAnimal(null)"></edit-animal>
+<edit-animal [selectedAnimal]="selectedAnimal" (doneEditingEmitter)="editAnimal(null)"></edit-animal>
 
 <add-animal (animalEmitter)="addAnimal($event)"></add-animal>
