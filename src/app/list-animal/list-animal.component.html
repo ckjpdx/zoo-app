@@ -1,5 +1,5 @@
 <h2>Animal List</h2>
-<div *ngFor="let animal of animalList | animalProperty:filterProperty" class="animal">
+<div *ngFor="let animal of animalList | AnimalProperty:filterProperty" class="animal">
   <h3>{{animal.name}}</h3>
   <button (click)="editAnimal(animal)">Edit</button>
   <p>{{animal.species}}</p>

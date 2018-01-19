@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Animal } from './../model';
 
 @Pipe({
-  name: "animalProperty",
+  name: "AnimalProperty",
   pure: false
 })
 
