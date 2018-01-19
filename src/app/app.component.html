@@ -4,4 +4,4 @@
 
 <list-animal [animalList]="animalList"></list-animal>
 
-<add-animal></add-animal>
+<add-animal (animalEmitter)="addAnimal($event)"></add-animal>

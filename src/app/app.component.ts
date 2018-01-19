@@ -20,8 +20,11 @@ export class AppComponent {
     dislikes: "Loud Noises",
     }
   ]
+  addAnimal(newAnimal: Animal){
+    this.animalList.push(newAnimal);
+  }
 }
 export class Animal {
+  defaultProperty: string = 'This is an animal';
   constructor(name: string, species: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string) { }
-
 }
