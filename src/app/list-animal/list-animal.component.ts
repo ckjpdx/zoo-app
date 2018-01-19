@@ -9,14 +9,16 @@ import { Animal } from './../model';
 export class ListAnimalComponent implements OnInit {
   @Input() animalList: Animal[];
   @Output() editEmitter = new EventEmitter();
-  filterProperty: string = `age`;
+  filterProperty: string = `name`;
 
   constructor() { }
 
   editAnimal(animal){
     this.editEmitter.emit(animal);
   }
-
+  setPipeFilter(value){
+    this.filterProperty = value;
+  }
   ngOnInit() {
   }
 }

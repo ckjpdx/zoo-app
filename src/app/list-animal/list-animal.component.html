@@ -1,4 +1,11 @@
 <h2>Animal List</h2>
+<p>Sort animals by:</p>
+<input (click)="setPipeFilter('name')" type="radio" name="pipe-buttons">
+<label>Name</label>
+<input (click)="setPipeFilter('youngest')" type="radio" name="pipe-buttons">
+<label>Age (youngest)</label>
+<input (click)="setPipeFilter('oldest')" type="radio" name="pipe-buttons">
+<label>Age (oldest)</label>
 <div *ngFor="let animal of animalList | AnimalProperty:filterProperty" class="animal">
   <h3>{{animal.name}}</h3>
   <button (click)="editAnimal(animal)">Edit</button>
