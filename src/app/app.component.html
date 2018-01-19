@@ -2,6 +2,6 @@
   {{ title }}
 </h1>
 
-<list-animal [animalList]="animalList"></list-animal>
+<list-animal [animalList]="animalList" (editEmitter)="editAnimal($event)"></list-animal>
 
 <add-animal (animalEmitter)="addAnimal($event)"></add-animal>
