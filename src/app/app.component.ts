@@ -7,21 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Zoo Animal Tracker';
-  masterAnimalList: Animal[] = [
+  animalList: Animal[] = [
   {
-    Species: "Northwest Black Tailed Deer",
-    Name: "Tinkerbell",
-    Age: 8,
-    Diet: "Herbivore",
-    Location: "Northern Trail",
-    Caretakers: 2,
-    Sex: "Female",
-    Likes: "Delicate roots and leaves",
-    Dislikes: "Loud Noises",
+    species: "Northwest Black Tailed Deer",
+    name: "Tinkerbell",
+    age: 8,
+    diet: "Herbivore",
+    location: "Northern Trail",
+    caretakers: 2,
+    sex: "Female",
+    likes: "Delicate roots and leaves",
+    dislikes: "Loud Noises",
     }
   ]
 }
 export class Animal {
-  constructor(Species: string, Name: string, Age: number, Diet: string, Location: string, Caretakers: number, Sex: string, Likes: string, Dislikes: string) { }
-  
+  constructor(species: string, name: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string) { }
+
 }
