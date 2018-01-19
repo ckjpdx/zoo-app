@@ -16,6 +16,9 @@ export class ListAnimalComponent implements OnInit {
   editAnimal(animal){
     this.editEmitter.emit(animal);
   }
+  deleteAnimal(i){
+    this.animalList.splice(i, 1);
+  }
   setPipeFilter(value){
     this.filterProperty = value;
   }

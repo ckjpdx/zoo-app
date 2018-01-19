@@ -1,6 +1,6 @@
 <!--  -->
 <div *ngIf="selectedAnimal">
-  <h2>Edit Animal:</h2>
+  <h2>Edit Animal: {{selectedAnimal.name}}</h2>
     <label>Name:</label>
     <input [(ngModel)]="selectedAnimal.name" type="text">
     <label>species:</label>
