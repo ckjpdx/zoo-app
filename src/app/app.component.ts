@@ -9,8 +9,8 @@ export class AppComponent {
   title = 'Zoo Animal Tracker';
   animalList: Animal[] = [
   {
-    species: "Northwest Black Tailed Deer",
     name: "Tinkerbell",
+    species: "Northwest Black Tailed Deer",
     age: 8,
     diet: "Herbivore",
     location: "Northern Trail",
@@ -22,6 +22,6 @@ export class AppComponent {
   ]
 }
 export class Animal {
-  constructor(species: string, name: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string) { }
+  constructor(name: string, species: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string) { }
 
 }
