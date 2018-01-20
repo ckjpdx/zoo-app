@@ -13,26 +13,24 @@ export class AppComponent {
     new Animal(`Tinkerbell`, `Deer`, 5, `Greens`, `Woods`, 2, `male`, `Clouds`, `Gunshots`)
   ]
   selectedAnimal = null;
-  // totalCaretakers = this.getTotalCareTakers(this.animalList)
-  //
-  // getTotalCareTakers(animalList){
-  //   let counter = 0;
-  //     animalList.forEach(function(animal){
-  //     counter += animal.caretakers;
-  //   });
-  //   return counter;
-  // }
+  totalCaretakers: number = 0; // caretaker method - can this be refactored?
 
-  selectAnimal(clickedAnimal){
-    this.selectedAnimal = clickedAnimal;
+  getTotalCaretakers(){ // caretaker method - can this be refactored?
+    let counter = 0;
+    this.animalList.forEach(function(animal){
+      counter += animal.caretakers;
+    });
+    this.totalCaretakers = counter;
+    console.log(this.totalCaretakers);
   }
 
   addAnimal(newAnimal: Animal){
     this.animalList.push(newAnimal);
+    this.getTotalCaretakers(); // caretaker method - can this be refactored?
   }
 
   editAnimal(animal: Animal){
     this.selectedAnimal = animal;
-    console.log(this.selectedAnimal);
+    // console.log(this.selectedAnimal);
   }
 }

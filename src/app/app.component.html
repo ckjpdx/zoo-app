@@ -1,7 +1,7 @@
 <h1>
   {{ title }}
 </h1>
-
+<p>Total Caretakers: {{totalCaretakers}}</p>
 <list-animal [animalList]="animalList" (editEmitter)="editAnimal($event)"></list-animal>
 
 <edit-animal [selectedAnimal]="selectedAnimal" (doneEditingEmitter)="editAnimal(null)"></edit-animal>

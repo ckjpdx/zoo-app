@@ -13,6 +13,8 @@ export class AddAnimalComponent implements OnInit {
   constructor() { }
 
   addAnimal(name, species, age, diet, location, caretakers, sex, likes, dislikes){
+    age = parseInt(age);
+    caretakers = parseInt(caretakers);
     let newAnimal: Animal = new Animal(name, species, age, diet, location, caretakers, sex, likes, dislikes)
     this.animalEmitter.emit(newAnimal);
   }

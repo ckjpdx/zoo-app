@@ -21,6 +21,9 @@ Run the following in the terminal to see the app on local host:
 * I want options to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older).
 * I want to click an animal to edit its name, age or caretakers.
 
+## Future Plans
+* pass instructions via ListAnimalComponent's delete method to AppComponent to recount caretakers OR pass caretakers property from AppComponent to ListAnimalComponent and change it there (like how animalList is changed) 
+
 ## Angular 2 Info
 
 ### Development server
