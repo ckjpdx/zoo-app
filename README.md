@@ -7,9 +7,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 For more infomation, [check out Angular's Hello World quick start page!](https://angular.io/guide/quickstart)
 
 Run the following in the terminal to see the app on local host:
-1. npm install -g @angular/cli
-3. cd ~/desktop/zoo-app
-4. ng serve --open
+
+1. open terminal
+1. enter 'cd ~/desktop/'
+1. enter 'git clone https://github.com/noodlebrains/zoo-app.git'
+1. enter 'cd zoo-app'
+1. enter 'npm install -g @angular/cli'
+1. enter 'ng serve --open'
 
 ## User Stories
 * I want to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike.
