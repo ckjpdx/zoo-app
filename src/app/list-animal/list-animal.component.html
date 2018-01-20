@@ -6,6 +6,7 @@
 <label>Age (youngest)</label>
 <input (click)="setPipeFilter('oldest')" type="radio" name="pipe-buttons">
 <label>Age (oldest)</label>
+<!-- <p>Total caretakers required: {{totalCaretakers}}</p> -->
 <div *ngFor="let animal of animalList | AnimalProperty:filterProperty; let i = index" class="animal">
   <h3>{{animal.name}}</h3>
   <button (click)="editAnimal(animal)">Edit</button>

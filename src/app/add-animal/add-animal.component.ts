@@ -13,9 +13,7 @@ export class AddAnimalComponent implements OnInit {
   constructor() { }
 
   addAnimal(name, species, age, diet, location, caretakers, sex, likes, dislikes){
-    console.log(name, species, age);
     let newAnimal: Animal = new Animal(name, species, age, diet, location, caretakers, sex, likes, dislikes)
-    console.log(newAnimal);
     this.animalEmitter.emit(newAnimal);
   }
 

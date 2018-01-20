@@ -13,6 +13,15 @@ export class AppComponent {
     new Animal(`Tinkerbell`, `Deer`, 5, `Greens`, `Woods`, 2, `male`, `Clouds`, `Gunshots`)
   ]
   selectedAnimal = null;
+  // totalCaretakers = this.getTotalCareTakers(this.animalList)
+  //
+  // getTotalCareTakers(animalList){
+  //   let counter = 0;
+  //     animalList.forEach(function(animal){
+  //     counter += animal.caretakers;
+  //   });
+  //   return counter;
+  // }
 
   selectAnimal(clickedAnimal){
     this.selectedAnimal = clickedAnimal;
